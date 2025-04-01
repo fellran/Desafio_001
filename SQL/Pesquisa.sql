@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS tb_horario (
     dt_horario DATE
 )AUTO_INCREMENT = 1;
 
+ALTER TABLE tb_horario MODIFY COLUMN hora VARCHAR(6);
+
 CREATE TABLE IF NOT EXISTS tb_nivel_ruido (
 	id_nivel_ruido INT PRIMARY KEY AUTO_INCREMENT,
     valor_ruido INT NOT NULL,
@@ -31,4 +33,20 @@ CREATE TABLE IF NOT EXISTS tb_nivel_ruido (
 INSERT INTO tb_cruzamento (nome, localizacao) VALUES ('Central', 'Brasilia');
 
 INSERT INTO tb_horario (hora, dt_horario) VALUES ('20.00', '2025-03-29'), ('09.00', '2025-03-12'), ('12.00', '2025-03-15');
+
+INSERT INTO tb_nivel_ruido (valor_ruido, id_cruzamento, id_horario) VALUES 
+	(85, 1, 4), (92, 1, 5), (95, 1, 6), (98, 1, 4), (101, 1, 5), (103, 1, 6),
+	(107, 1, 4), (110, 1, 4), (114, 1, 5), (117, 1, 6), (120, 1, 4), (125, 1, 5), 
+	(127, 1, 6), (120, 1, 4), (112, 1, 4),(122, 1, 4);
+
+-- DQL
+
+SELECT avg(valor_ruido) AS media FROM tb_nivel_ruido;
+    
+
+
+
+
+
+
 
