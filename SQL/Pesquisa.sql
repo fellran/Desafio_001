@@ -40,8 +40,20 @@ INSERT INTO tb_nivel_ruido (valor_ruido, id_cruzamento, id_horario) VALUES
 	(127, 1, 6), (120, 1, 4), (112, 1, 4),(122, 1, 4);
 
 -- DQL
-
+-- VALOR MEDIO DOS VALORES
 SELECT avg(valor_ruido) AS media FROM tb_nivel_ruido;
+
+-- QUANTOS RUIDOS FORAM REGISTRADOS
+SELECT count(valor_ruido) AS quantidade FROM tb_nivel_ruido;
+
+-- QUAL SOMA DOS RUIDOS
+SELECT sum(valor_ruido) AS soma_total FROM tb_nivel_ruido;
+
+-- QUAL O VALOR MINIMO DOS RUIDOS
+SELECT min(valor_ruido) AS valor_minimo FROM tb_nivel_ruido;
+
+-- QUAL O VALOR MAXIMO DOS RUIDOS
+SELECT max(valor_ruido) AS valor_minimo FROM tb_nivel_ruido;
     
 
 
