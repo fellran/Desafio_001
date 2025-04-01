@@ -54,6 +54,9 @@ SELECT min(valor_ruido) AS valor_minimo FROM tb_nivel_ruido;
 
 -- QUAL O VALOR MAXIMO DOS RUIDOS
 SELECT max(valor_ruido) AS valor_minimo FROM tb_nivel_ruido;
+
+
+
     
 
 
