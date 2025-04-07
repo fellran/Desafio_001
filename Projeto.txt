@@ -1,0 +1,6 @@
+Estudo de caso empresa TreinaWeb valor do projeto total 250.000 reais valor do serviço do bando de dados 25.000 
+  Requisitos funcionais
+	- O usuario vai entrar no sistema com login (cpf ou email) e senha.
+	- O usuario realiza um cadastro de dados sensiveis a saber:nome completo, nascimento, sexo(m, f), cpf, celular, pais
+	- O sistema realizara uma validação caso no cadastro os clientes informen dados invalidos do cpf, email ou celular
+	- Fluxo alternativo: o sistema irá mostrar um link de recuperação da conta
