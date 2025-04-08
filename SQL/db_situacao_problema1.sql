@@ -4,8 +4,10 @@ USE db_situacao_problema1;
 
 CREATE TABLE IF NOT EXISTS tb_acoes(
 	id INT PRIMARY KEY AUTO_INCREMENT,
-	valor DECIMAL(2, 2) NOT NULL
+	valor DECIMAL(10, 2) NOT NULL
 )AUTO_INCREMENT = 1;
+
+describe tb_acoes;
 
 ALTER TABLE tb_acoes MODIFY COLUMN valor DECIMAL(10, 2);
 
