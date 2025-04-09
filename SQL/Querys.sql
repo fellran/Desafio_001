@@ -13,5 +13,5 @@ CREATE VIEW vw_estatisticas_acoes AS SELECT (SELECT max(valor) FROM tb_acoes) AS
 AS media_valor,(SELECT sum(valor) FROM tb_acoes) AS soma_total;
 
 SELECT * FROM vw_estatisticas_acoes;
- 
- 
+
+SELECT valor AS acima FROM tb_acoes WHERE valor > 1.30;
